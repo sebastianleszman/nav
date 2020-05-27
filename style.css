@@ -95,7 +95,7 @@ a {
 
 .logo {
   cursor: pointer;
-  height: 10rem;
+  height: 20rem;
   width: 100%;
 }
 
@@ -103,7 +103,7 @@ a {
 
 .main-header__nav-toggle-btn {
   position: absolute;
-  top: 5rem;
+  top: 10rem;
   left: 2rem;
 }
 
