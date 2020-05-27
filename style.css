@@ -152,15 +152,17 @@ a {
   flex-direction: column;
   background-color: var(--third);
   width: 100%;
-  padding: 1rem 0 1rem 0;
+  /* wydluza menu */
+  /* padding: 1rem 0 1rem 0; */
 }
 
 .main-header__item {
-  margin: 0 5rem 0 5rem;
-  padding: 1rem;
   border-bottom: 1px solid var(--gray);
   text-align: center;
-  cursor: pointer;
+}
+
+.main-header__item:hover {
+  background-color: var(--cream);
 }
 
 .main-header__item:last-child {
@@ -171,10 +173,8 @@ a {
   transition: all 0.3s ease 0s;
   background-color: inherit;
   font-size: 1rem;
-}
-
-.main-header__item a:hover {
-  color: var(--second);
+  padding: 1rem 2rem;
+  display: inline-block;
 }
 
 /* ---------------- Tablet -------------------------------------*/
