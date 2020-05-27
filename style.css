@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap");
+
+/* variables */
+:root {
+  --first: #0088a9;
+  --second: #a03e99;
+  --third: #fff5ec;
+  --forth: #7e3279;
+  --black: #000;
+  --dark: #333;
+  --gray: #ccc;
+  --cream: #f4f4f4;
+  --white: #fff;
+}
+
+/* Reseting */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 16px;
+  background-color: var(--white);
+  color: var(--black);
+  font-family: "Lato", sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
+  background-color: var(--white);
+  cursor: pointer;
+}
+
+/* Utilieties */
+
+.img-contain {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem 2rem;
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
+  color: var(--white);
+  background-color: var(--second);
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: var(--forth);
+}
+
+.btn--menu {
+  padding: 0.5rem 2rem;
+  text-decoration: none;
+  transition: all 0.3s ease 0s;
+  color: var(--white);
+  background-color: var(--second) !important;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+.btn--menu:hover {
+  background-color: var(--forth) !important;
+  color: var(--white) !important;
+}
+
+/* Mobile */
+
+.main-header {
+  width: 100%;
+  padding: 0 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: var(--third);
+}
+
+.logo {
+  cursor: pointer;
+  margin-right: auto;
+}
+
+/* Hamburger */
+
+.main-header__nav-toggle-btn {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+}
+
+.hamburger {
+  display: block;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+  width: 2rem;
+  height: 3px;
+  background-color: var(--black);
+  border-radius: 10px;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 4px;
+}
+
+.hamburger::before {
+  bottom: 6px;
+}
+
+.hamburger::after {
+  top: 6px;
+}
+
+/* nav */
+
+.main-header__nav {
+}
+
+.main-header__item-list {
+}
+
+.main-header__item {
+  display: inline-block;
+}
+
+.main-header__item a {
+  padding: 0.5rem 2rem;
+  transition: all 0.3s ease 0s;
+  margin-left: 0.5rem;
+  background-color: inherit;
+}
+
+.main-header__item a:hover {
+  color: var(--second);
+}
+
+/* ---------------- Tablet -------------------------------------*/
+@media (min-width: 620px) {
+}
+@media (min-width: 768px) {
+  .main-header {
+    width: 100%;
+    padding: 0 3rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: var(--third);
+  }
+
+  .logo {
+    cursor: pointer;
+    margin-right: auto;
+  }
+  .main-header__nav-toggle-btn {
+    display: none;
+  }
+  .main-header__nav {
+    display: contents;
+  }
+  .main-header__item-list {
+  }
+
+  .main-header__item {
+    display: inline-block;
+  }
+
+  .main-header__item a {
+    padding: 0.5rem 2rem;
+    transition: all 0.3s ease 0s;
+    margin-left: 0.5rem;
+    background-color: inherit;
+  }
+
+  .main-header__item a:hover {
+    color: var(--second);
+  }
+}
+/* ---------------- Laptop -------------------------------------*/
+@media (min-width: 960) {
+}
+/* ---------------- Desktop -------------------------------------*/
+@media (min-width: 1200) {
+}
