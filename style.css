@@ -108,38 +108,52 @@ a {
 /* Hamburger */
 
 .main-header__nav-toggle-btn {
+  padding: 1rem;
+  display: inline-block;
+  cursor: pointer;
+  background-color: var(--white);
+  border: 0;
+  margin: 0;
   position: absolute;
-  top: 2rem;
-  left: 2rem;
+  top: 1rem;
+  left: 1rem;
 }
 
-.hamburger {
-  display: block;
-}
-
-.hamburger,
-.hamburger::before,
-.hamburger::after {
+.hamburger__box {
   width: 2.5rem;
+  height: 2rem;
+  display: inline-block;
+  position: relative;
+}
+
+.hamburger__inner {
   height: 4px;
-  background-color: var(--second);
-  border-radius: 10px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-.hamburger::before,
-.hamburger::after {
-  content: "";
+.hamburger__inner,
+.hamburger__inner::before,
+.hamburger__inner::after {
+  background-color: var(--forth);
   position: absolute;
+  width: 100%;
   left: 0;
-  height: 5px;
+  border-radius: 1rem;
 }
 
-.hamburger::before {
-  bottom: 7px;
+.hamburger__inner::before,
+.hamburger__inner::after {
+  content: "";
+  height: 6px;
 }
 
-.hamburger::after {
-  top: 7px;
+.hamburger__inner::before {
+  top: 0.5rem;
+}
+
+.hamburger__inner::after {
+  bottom: 0.5rem;
 }
 
 /* nav */
