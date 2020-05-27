@@ -53,6 +53,12 @@ a {
   object-fit: contain;
 }
 
+.img-cover {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 .btn {
   display: inline-block;
   padding: 0.5rem 2rem;
@@ -89,13 +95,13 @@ a {
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: left;
   background-color: var(--white);
 }
 
 .logo {
+  margin-top: 1rem;
   cursor: pointer;
-  height: 20rem;
+  height: 20vh;
   width: 100%;
 }
 
@@ -139,23 +145,32 @@ a {
 /* nav */
 
 .main-header__nav {
-  background-color: var(--white);
 }
 
 .main-header__item-list {
   display: flex;
   flex-direction: column;
+  background-color: var(--third);
+  width: 100%;
+  padding: 1rem 0 1rem 0;
 }
 
 .main-header__item {
-  display: inline-block;
+  margin: 0 5rem 0 5rem;
+  padding: 1rem;
+  border-bottom: 1px solid var(--gray);
+  text-align: center;
+  cursor: pointer;
+}
+
+.main-header__item:last-child {
+  border: none;
 }
 
 .main-header__item a {
-  padding: 0.5rem 2rem;
   transition: all 0.3s ease 0s;
-  margin-left: 0.5rem;
   background-color: inherit;
+  font-size: 1rem;
 }
 
 .main-header__item a:hover {
@@ -166,7 +181,7 @@ a {
 @media (min-width: 620px) {
 }
 @media (min-width: 768px) {
-  .main-header {
+  /* .main-header {
     width: 100%;
     padding: 0 3rem;
     display: flex;
@@ -201,7 +216,7 @@ a {
 
   .main-header__item a:hover {
     color: var(--second);
-  }
+  } */
 }
 /* ---------------- Laptop -------------------------------------*/
 @media (min-width: 960) {
