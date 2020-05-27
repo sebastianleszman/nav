@@ -1,7 +1,8 @@
-const menuToggle = document.querySelector(".main-header__nav-toggle-btn");
+const menuToggleBtn = document.querySelector(".main-header__nav-toggle-btn");
+const mainNav = document.querySelector(".main-header__nav");
 
 function menuToggleClickHandler() {
-  menuToggle.classList.toggle("menu-open");
+  mainNav.classList.toggle("menu-open");
 }
 
-menuToggle.addEventListener("click", menuToggleClickHandler);
+menuToggleBtn.addEventListener("click", menuToggleClickHandler);

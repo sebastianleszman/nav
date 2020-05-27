@@ -47,13 +47,13 @@ a {
 
 /* Utilieties */
 
-.img-contain {
+.img--contain {
   height: 100%;
   width: 100%;
   object-fit: contain;
 }
 
-.img-cover {
+.img--cover {
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -145,10 +145,10 @@ a {
 /* nav */
 
 .main-header__nav {
+  display: none;
 }
 
 .main-header__item-list {
-  display: flex;
   flex-direction: column;
   background-color: var(--third);
   width: 100%;
@@ -173,9 +173,16 @@ a {
   transition: all 0.3s ease 0s;
   background-color: inherit;
   font-size: 1rem;
+  /* dzieki width100 jak wciskam na telefonie to moge na calej dlugosci */
   width: 100%;
   padding: 1rem 0;
+  /* aby dzilal padding musi byc inline-block */
   display: inline-block;
+}
+
+/* active class */
+.menu-open {
+  display: flex;
 }
 
 /* ---------------- Tablet -------------------------------------*/
