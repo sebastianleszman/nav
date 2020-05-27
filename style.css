@@ -115,7 +115,7 @@ a {
 .hamburger::before,
 .hamburger::after {
   width: 2rem;
-  height: 3px;
+  height: 4px;
   background-color: var(--second);
   border-radius: 10px;
 }
@@ -125,15 +125,14 @@ a {
   content: "";
   position: absolute;
   left: 0;
-  height: 3px;
 }
 
 .hamburger::before {
-  bottom: 6px;
+  bottom: 7px;
 }
 
 .hamburger::after {
-  top: 6px;
+  top: 7px;
 }
 
 /* nav */
