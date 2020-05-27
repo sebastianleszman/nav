@@ -108,6 +108,7 @@ a {
 /* Hamburger */
 
 .main-header__nav-toggle-btn {
+  /* padding robi pole */
   padding: 1rem;
   display: inline-block;
   cursor: pointer;
@@ -127,8 +128,8 @@ a {
 }
 
 .hamburger__inner {
-  height: 4px;
   top: 50%;
+  width: 100%;
   transform: translateY(-50%);
 }
 
@@ -137,23 +138,24 @@ a {
 .hamburger__inner::after {
   background-color: var(--forth);
   position: absolute;
-  width: 100%;
   left: 0;
   border-radius: 1rem;
+  height: 4px;
 }
 
 .hamburger__inner::before,
 .hamburger__inner::after {
   content: "";
-  height: 6px;
 }
 
 .hamburger__inner::before {
   top: 0.5rem;
+  width: 90%;
 }
 
 .hamburger__inner::after {
   bottom: 0.5rem;
+  width: 70%;
 }
 
 /* nav */
