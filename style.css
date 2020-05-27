@@ -125,6 +125,7 @@ a {
   content: "";
   position: absolute;
   left: 0;
+  height: 5px;
 }
 
 .hamburger::before {
