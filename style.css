@@ -138,6 +138,8 @@ a {
 .hamburger__inner,
 .hamburger__inner::before,
 .hamburger__inner::after {
+  /* do krecenia */
+  transition: all 0.3s ease 0s;
   background-color: var(--forth);
   position: absolute;
   left: 0;
@@ -166,6 +168,7 @@ a {
   display: flex;
   transform: translateX(-250px);
   transition: transform 0.3s 0.1s ease-in-out;
+  transition: ;
   position: absolute;
   top: 0;
   left: 0;
@@ -211,7 +214,18 @@ a {
   transform: translateX(0px);
 }
 
-.hamburger--active {
+.hamburger--active .hamburger__inner {
+  background-color: transparent;
+}
+
+.hamburger--active .hamburger__inner::before {
+  width: 100%;
+  transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger--active .hamburger__inner::after {
+  transform: translateY(-8px) rotate(-45deg);
+  width: 100%;
 }
 
 /* ---------------- Tablet -------------------------------------*/
