@@ -6,6 +6,7 @@
   --second: #a03e99;
   --third: #fff5ec;
   --forth: #7e3279;
+  --fifth: orange;
   --black: #000;
   --dark: #333;
   --gray: #ccc;
@@ -122,6 +123,9 @@ a {
   z-index: 10;
 }
 
+.main-header__nav-toggle-btn:focus {
+    }
+
 .hamburger__box {
   width: 2.5rem;
   height: 2rem;
@@ -166,7 +170,7 @@ a {
 
 .main-header__nav {
   display: flex;
-  transform: translateX(-250px);
+  transform: translateX(-300px);
   transition: transform 0.3s 0.1s ease-in-out;
   position: absolute;
   top: 0;

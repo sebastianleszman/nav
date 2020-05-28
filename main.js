@@ -7,3 +7,12 @@ function menuToggleClickHandler() {
 }
 
 menuToggleBtn.addEventListener("click", menuToggleClickHandler);
+
+document.addEventListener("keydown", function (event) {
+  if (mainNav.classList.contains("menu--active")) {
+    if (event.key === "Escape") {
+      mainNav.classList.remove("menu--active");
+      menuToggleBtn.classList.remove("hamburger--active");
+    }
+  }
+});
