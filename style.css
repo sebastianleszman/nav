@@ -112,7 +112,7 @@ a {
   padding: 1rem;
   display: inline-block;
   cursor: pointer;
-  background-color: var(--white);
+  background-color: transparent;
   border: 0;
   margin: 0;
   position: absolute;
@@ -212,7 +212,6 @@ a {
 }
 
 .hamburger--active {
-  background-color: var(--third);
 }
 
 /* ---------------- Tablet -------------------------------------*/
