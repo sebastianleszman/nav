@@ -179,7 +179,7 @@ a {
 
 .main-header__item {
   border-bottom: 1px solid var(--gray);
-  text-align: center;
+  text-align: left;
 }
 
 .main-header__item:hover {
@@ -196,7 +196,7 @@ a {
   font-size: 1rem;
   /* dzieki width100 jak wciskam na telefonie to moge na calej dlugosci */
   width: 100%;
-  padding: 1rem 0;
+  padding: 1rem 2rem;
   /* aby dzilal padding musi byc inline-block */
   display: inline-block;
 }
