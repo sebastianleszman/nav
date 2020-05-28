@@ -108,7 +108,7 @@ a {
 /* Hamburger */
 
 .main-header__nav-toggle-btn {
-  /* padding robi pole */
+  /* padding robi dodatkowe pole */
   padding: 1rem;
   display: inline-block;
   cursor: pointer;
@@ -118,6 +118,8 @@ a {
   position: absolute;
   top: 1rem;
   left: 1rem;
+  /* zmienilem z index na stale */
+  z-index: 10;
 }
 
 .hamburger__box {
@@ -161,11 +163,13 @@ a {
 /* nav */
 
 .main-header__nav {
-  display: none;
+  display: flex;
+  transform: translateX(-250px);
+  transition: transform 0.3s 0.1s ease-in-out;
   position: absolute;
   top: 0;
   left: 0;
-  width: 300px;
+  width: 250px;
   height: 100%;
 }
 
@@ -173,6 +177,7 @@ a {
   flex-direction: column;
   background-color: var(--third);
   width: 100%;
+  padding-top: 6rem;
   /* wydluza menu */
   /* padding: 1rem 0 1rem 0; */
 }
@@ -186,9 +191,9 @@ a {
   background-color: var(--cream);
 }
 
-/* .main-header__item:last-child {
-  border: none;
-} */
+.main-header__item:first-child {
+  border-top: 1px solid var(--gray);
+}
 
 .main-header__item a {
   transition: all 0.3s ease 0s;
@@ -202,8 +207,12 @@ a {
 }
 
 /* active class */
+.menu--active {
+  transform: translateX(0px);
+}
+
 .hamburger--active {
-  display: flex;
+  background-color: var(--third);
 }
 
 /* ---------------- Tablet -------------------------------------*/
