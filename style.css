@@ -124,7 +124,7 @@ a {
 }
 
 .main-header__nav-toggle-btn:focus {
-    }
+}
 
 .hamburger__box {
   width: 2.5rem;
@@ -235,42 +235,78 @@ a {
 @media (min-width: 620px) {
 }
 @media (min-width: 768px) {
-  /* .main-header {
+  .main-header {
     width: 100%;
+    margin: 1rem 0 0 0;
     padding: 0 3rem;
     display: flex;
+    flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    background-color: var(--third);
+    background-color: var(--white);
   }
 
   .logo {
+    margin: 0;
+    padding: 0;
     cursor: pointer;
+    height: 20vh;
+    width: unset;
     margin-right: auto;
   }
   .main-header__nav-toggle-btn {
     display: none;
   }
   .main-header__nav {
-    display: contents;
+    transform: unset;
+    transition: unset;
+    position: unset;
+    width: unset;
+    height: 100%;
+    /* padding: 0; */
+    /* margin: 0; */
   }
   .main-header__item-list {
+    background-color: var(--white);
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: unset;
+    height: 100%;
+    padding: 0;
+    margin: 0;
   }
 
   .main-header__item {
-    display: inline-block;
+    background-color: var(--white);
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+
+    margin-left: 1rem;
   }
 
-  .main-header__item a {
-    padding: 0.5rem 2rem;
-    transition: all 0.3s ease 0s;
-    margin-left: 0.5rem;
+  .main-header__item:hover {
     background-color: inherit;
   }
 
+  .main-header__item a {
+    transition: unset;
+    background-color: inherit;
+    font-size: 1rem;
+    text-align: center;
+    white-space: nowrap;
+    width: 100%;
+    height: 100%;
+    padding: unset;
+    padding: 1rem 1rem;
+    margin: 0;
+   border-bottom: 2px solid var(--white);
+  }
+
   .main-header__item a:hover {
-    color: var(--second);
-  } */
+    border-bottom: 2px solid var(--second);
 }
 /* ---------------- Laptop -------------------------------------*/
 @media (min-width: 960) {
