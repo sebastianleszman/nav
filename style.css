@@ -581,4 +581,15 @@ h6 {
   html {
     font-size: 1.4rem;
   }
+  .logo {
+    width: 30%;
+  }
+
+  .main-header__nav {
+    width: 60%;
+  }
+
+  .main-header__item a {
+    font-size: 1.1rem;
+  }
 }
