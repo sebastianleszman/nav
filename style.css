@@ -530,7 +530,7 @@ h6 {
   .main-header__item a {
     transition: unset;
     background-color: inherit;
-    font-size: 0.75rem;
+    font-size: 0.85rem;
     text-align: center;
     white-space: nowrap;
     width: 100%;
